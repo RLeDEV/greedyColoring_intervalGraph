@@ -1,7 +1,5 @@
 /*
-* Full Name: Raz Levy
-* ID : 311335699
-* Lecturer : Ahuva Meualem
+* Author: Raz Levy
 * **Greedy Coloring Task **
 */
 #define _CRT_SECURE_NO_WARNINGS
