@@ -1,5 +1,10 @@
 /*
+<<<<<<< HEAD
 * Author : Raz Levy
+=======
+* Author: Raz Levy
+* **Greedy Coloring Task **
+>>>>>>> f82a49d70deab451559c1e0aa0221f6f4da544c3
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
@@ -133,6 +138,7 @@ void sort(vertex* arr, int k){
 		}
 	}
 }
+<<<<<<< HEAD
 
 void greedyALGO(vertex* arr, int k) {
 	int i,ch,c,color =0;
@@ -216,3 +222,5 @@ void printByColor(vertex* arr, int k) {
 		printf(" --> %d\n", i + 1);
 	}
 }
+=======
+>>>>>>> f82a49d70deab451559c1e0aa0221f6f4da544c3
