@@ -1,5 +1,7 @@
 /*
-* Author: Raz Levy
+* Full Name: Raz Levy
+* ID : 311335699
+* Lecturer : Ahuva Meualem
 * **Greedy Coloring Task **
 */
 #define _CRT_SECURE_NO_WARNINGS
@@ -135,7 +137,6 @@ void sort(vertex* arr, int k){
 	}
 }
 
-
 void greedyALGO(vertex* arr, int k) {
 	int i,ch,c,color =0;
 	int *colorsArray;
@@ -168,7 +169,7 @@ void greedyALGO(vertex* arr, int k) {
 				}
 			}
 		}
-		for (ch = 0; ch < i; ch++) { // takes the first possible color
+		for (ch = 0; ch < k; ch++) { // takes the first possible color
 			if (colorsArray[ch] != -1) {
 				color = colorsArray[ch];
 				break;
@@ -208,6 +209,7 @@ void printByColor(vertex* arr, int k) {
 
 	// Prints the color of the vertex
 	for (i = 0; i <= max; i++) {
+		printf("{");
 		for (j = 0; j < k; j++) {
 			if (arr[j].colorID == i) {
 				printf("[%d,%d]", arr[j].start, arr[j].end);
@@ -215,7 +217,11 @@ void printByColor(vertex* arr, int k) {
 					printf(",");
 			}
 		}
-		printf(" --> %d\n", i + 1);
+		printf("}");
+		printf("= %d", i + 1);
+		if (!(i == max)) {
+			printf(", ");
+		}
 	}
+	printf("\n");
 }
-
