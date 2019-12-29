@@ -1,8 +1,6 @@
 /*
-* Full Name: Raz Levy
-* ID : 311335699
-* Lecturer : Ahuva Meualem
-* **Greedy Coloring Task **
+* Author: Raz Levy
+* **Greedy Coloring Algo **
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
