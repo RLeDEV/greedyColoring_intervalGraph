@@ -47,7 +47,6 @@ void GreedyColoring() {
 	// Prints all the vertexes
 	printVertexes(arr, k);
 	sort(arr, k);
-	printVertexes(arr, k);
 	// Setting degree for all vertexes
 	setDegree(arr, k);
 	printf("G edges = %d\n", getSumDegrees(arr, k) / 2);
@@ -206,7 +205,7 @@ void printByColor(vertex* arr, int k) {
 		if (arr[i].colorID > max)
 			max = arr[i].colorID;
 	}
-
+	printf("Optional Coloring: ");
 	// Prints the color of the vertex
 	for (i = 0; i <= max; i++) {
 		printf("{");
